@@ -1,12 +1,14 @@
 import React from 'react'
-import { StyleSheet, View, Text, SafeAreaView } from 'react-native'
+import { StyleSheet, View, Text, SafeAreaView, StatusBar } from 'react-native'
+import colors from './src/utils/colors'
 
 export default function App() {
   return(
     <>
+      <StatusBar barStyle='light-content' />
       <SafeAreaView style={styles.safeArea}>
         <Text>
-          Formulario
+          Cotizador de prestamos
         </Text>
       </SafeAreaView>
       <View>
@@ -25,7 +27,7 @@ export default function App() {
 
 const styles = StyleSheet.create({
   safeArea: {
-    backgroundColor: '#f00',
+    backgroundColor: colors.PRIMARY_COLOR,
     borderBottomLeftRadius: 30,
     borderBottomRightRadius: 30,
     height: 200,
